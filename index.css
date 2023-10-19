@@ -18,7 +18,7 @@ h1 {
   color: var(--font-color);
 }
 legend {
-  font-size: clamp(50%, 4rem, 8rem);
+  font-size: clamp(5rem, 2vw, 8rem);
 }
 fieldset {
   position: relative;
@@ -41,6 +41,7 @@ input {
   background-repeat: no-repeat;
   background-position: center;
   background-size: max(100vh, 100%);
+  cursor: default;
 }
 .signup-showcase h1 {
   font-size: clamp(10rem, 10vw, 32rem);
@@ -87,12 +88,14 @@ input {
   border: none;
   transition: all 0.2s linear;
   border-bottom: 2px solid transparent;
-  border-radius: var(--pad);
   width: 100%;
   background-color: var(--primary-bg-color);
 }
 .signup-form-input:invalid {
   border-bottom: 2px solid red;
+}
+.signup-form-input:valid {
+  border-bottom: 2px solid var(--sub-btn-color);
 }
 
 .signup-form-input:focus,
