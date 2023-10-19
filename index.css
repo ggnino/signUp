@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  --pad: 0.5rem;
+  --mar: 2rem;
+  --primary-bg-color: #37a3c9ff;
+  --sub-btn-color: black;
+  --font-color: ghostwhite;
+}
+::placeholder,
+legend,
+label,
+h1 {
+  color: var(--font-color);
+}
+legend {
+  font-size: clamp(50%, 4rem, 8rem);
+}
+fieldset {
+  position: relative;
+  border: none;
+  padding: var(--pad);
+}
+input {
+  outline: none;
+}
+.signup-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--primary-bg-color);
+  overflow: hidden;
+}
+.signup-showcase {
+  position: relative;
+  width: 100%;
+  background-image: url(./images/cameras.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: max(100vh, 100%);
+}
+.signup-showcase h1 {
+  font-size: clamp(10rem, 10vw, 32rem);
+  background-color: rgba(0, 0, 0, 0.63);
+  padding: var(--mar);
+  text-align: center;
+  margin-top: max(25vh, 30%);
+}
+.signup-form-container {
+  padding: var(--mar);
+  width: 100%;
+  border-left: 12px solid black;
+}
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--mar);
+  height: 100%;
+  width: max(500px, 100%);
+  gap: 20rem;
+}
+.signup-form-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: var(--mar);
+  width: min(100%, 800px);
+  gap: 5rem;
+  padding: var(--pad);
+  flex-shrink: 0;
+}
+.signup-form-input,
+.signup-form-label {
+  display: block;
+  font-size: 2rem;
+  padding: var(--pad);
+}
+
+.signup-form-input {
+  outline: none;
+  border: none;
+  transition: all 0.2s linear;
+  border-bottom: 2px solid transparent;
+  border-radius: var(--pad);
+  width: 100%;
+  background-color: var(--primary-bg-color);
+}
+.signup-form-input:invalid {
+  border-bottom: 2px solid red;
+}
+
+.signup-form-input:focus,
+.signup-form-input:focus-visible,
+.signup-form-input:active {
+  border-bottom: 2px solid var(--sub-btn-color);
+}
+.signup-form-input:focus::placeholder {
+  opacity: 0;
+}
+.signup-form-input:focus ~ .signup-form-label,
+.signup-form-input:not(:placeholder-shown) ~ .signup-form-label {
+  transform: translateY(0rem);
+  font-size: 1rem;
+  opacity: 1;
+}
+
+.signup-form-label {
+  position: absolute;
+  transition: all 0.2s linear;
+  transform: translateY(-3.5rem);
+  opacity: 0;
+}
+.signup-form-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--mar) 0;
+  margin: var(--pad) 0;
+}
+.signup-form-link p {
+  font-size: 1.6rem;
+  margin: var(--pad) 0;
+}
+.signup-form-link-btn {
+  cursor: pointer;
+  font-size: 3rem;
+  padding: var(--pad);
+  border: 2px solid var(--sub-btn-color);
+  border-radius: var(--pad);
+  background-color: var(--sub-btn-color);
+  color: white;
+  width: 100%;
+  transition: all 0.2s linear;
+}
+
+.signup-form-link-btn:hover {
+  background-color: green;
+  border-color: green;
+}
