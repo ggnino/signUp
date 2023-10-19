@@ -9,70 +9,79 @@
   <body>
     <div class="signup-container">
       <div class="signup-showcase">
-        <p>LOGO</p>
+        <h1>SNAPS!</h1>
       </div>
-      <div class="signup-form">
-        <form action="#myBackEndLink" method="post">
+      <div class="signup-form-container">
+        <form class="signup-form" action="#myBackEndLink" method="post">
           <legend>Lets get started</legend>
-
-          <fieldset>
-            <label class="signup-form-label" for="first_name"
-              >First name:</label
-            >
-            <input
-              class="signup-form-input"
-              type="text"
-              id="first_name"
-              name="first_name"
-            />
-          </fieldset>
-          <fieldset>
-            <label class="signup-form-label" for="lasst_name">Last name:</label>
-            <input
-              class="signup-form-input"
-              type="text"
-              id="lasst_name"
-              name="lasst_name"
-            />
-          </fieldset>
-          <fieldset>
-            <label class="signup-form-label" for="email">Email:</label>
-            <input
-              class="signup-form-input"
-              type="email"
-              id="email"
-              name="email"
-            />
-          </fieldset>
-          <fieldset>
-            <label class="signup-form-label" for="phone_number">Phone:</label>
-            <input
-              class="signup-form-input"
-              type="tel"
-              id="phone_number"
-              name="phone_number"
-            />
-          </fieldset>
-          <fieldset>
-            <label class="signup-form-label" for="password">Password:</label>
-            <input
-              class="signup-form-input"
-              type="password"
-              id="password"
-              name="password"
-            />
-          </fieldset>
-          <fieldset>
-            <label class="signup-form-label" for="password_confirm"
-              >Password confirm:</label
-            >
-            <input
-              class="signup-form-input"
-              type="password"
-              id="password_confirm"
-              name="password_confirm"
-            />
-          </fieldset>
+          <div class="signup-form-inputs">
+            <fieldset>
+              <input
+                class="signup-form-input"
+                type="text"
+                id="first_name"
+                name="first_name"
+                placeholder="First name:"
+              />
+              <label class="signup-form-label" for="first_name"
+                >First name:</label
+              >
+            </fieldset>
+            <fieldset>
+              <input
+                class="signup-form-input"
+                type="text"
+                id="lasst_name"
+                name="lasst_name"
+                placeholder="Last name:"
+              />
+              <label class="signup-form-label" for="lasst_name"
+                >Last name:</label
+              >
+            </fieldset>
+            <fieldset>
+              <input
+                class="signup-form-input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email:"
+              />
+              <label class="signup-form-label" for="email">Email:</label>
+            </fieldset>
+            <fieldset>
+              <input
+                class="signup-form-input"
+                type="tel"
+                id="phone_number"
+                name="phone_number"
+                placeholder="Phone:"
+              />
+              <label class="signup-form-label" for="phone_number">Phone:</label>
+            </fieldset>
+            <fieldset>
+              <input
+                class="signup-form-input"
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password:"
+              />
+              <label class="signup-form-label" for="password">Password:</label>
+            </fieldset>
+            <fieldset>
+              <input
+                class="signup-form-input"
+                type="password"
+                id="password_confirm"
+                name="password_confirm"
+                placeholder="Password Confirm:"
+              />
+              <label class="signup-form-label" for="password_confirm"
+                >Password confirm:</label
+              >
+            </fieldset>
+          </div>
           <div class="signup-form-link">
             <button class="signup-form-link-btn" type="submit">Sign Up</button>
             <p>Already have an account? <a href="#signup-link">Log In</a></p>
