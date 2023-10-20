@@ -1,9 +1,11 @@
+@import url("https://fontlibrary.org//face/andika");
 * {
   margin: 0;
   padding: 0;
 }
 :root {
   font-size: 62.5%;
+
   scroll-behavior: smooth;
   --pad: 0.5rem;
   --mar: 2rem;
@@ -14,7 +16,9 @@
 ::placeholder,
 legend,
 label,
-h1 {
+h1,
+button {
+  font-family: "AndikaNewBasicRegular", sans-serif;
   color: var(--font-color);
 }
 legend {
